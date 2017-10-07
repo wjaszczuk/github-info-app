@@ -190,6 +190,7 @@ module.exports = {
                         ident: 'postcss',
                         plugins: () => [
                           require('postcss-flexbugs-fixes'),
+                          require('postcss-pxtorem'),
                           autoprefixer({
                             browsers: [
                               '>1%',

@@ -48,7 +48,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "serve": "serve -s build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -90,5 +91,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "postcss-pxtorem": "^4.0.1",
+    "serve": "^6.2.0"
   }
 }
